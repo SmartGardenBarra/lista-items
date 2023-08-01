@@ -19,30 +19,31 @@ const VasosCim = () => {
                 </div>
                 <div className={styles.content}>
                     <h2>{VasosCimento[id].nome}</h2>
-                    <img src={VasosCimento[id].img} alt="" />
+                    <div className={styles.img} style={{ backgroundImage: `url(${VasosCimento[id].img})` }}>
+                    </div>
                     <div className={styles.infosArea}>
                         <div className={styles.infos}>
-                            <div>Medidas</div>
+                            <div className={styles.titleNormal}>Medidas</div>
                             <div className={styles.tamanho}>{VasosCimento[id].medidas}</div>
-                            <div>Tamanho</div>
+                            <div className={styles.titleNormal}>Tamanho</div>
                             <div className={styles.tamanho}>{VasosCimento[id].tamanho}</div>
-                            <div>Preço</div>
+                            <div className={styles.titleNormal}>Preço</div>
                             <div className={styles.price}>R$ {(VasosCimento[id].preco * 2.2).toFixed(2)}</div>
                         </div>
                         <div className={styles.infos}>
-                            <div>Medidas</div>
+                            <div className={styles.titleNormal}>Medidas</div>
                             <div className={styles.tamanho}>{VasosCimento[id].medidas2}</div>
-                            <div>Tamanho</div>
+                            <div className={styles.titleNormal}>Tamanho</div>
                             <div className={styles.tamanho}>{VasosCimento[id].tamanho2}</div>
-                            <div>Preço</div>
+                            <div className={styles.titleNormal}>Preço</div>
                             <div className={styles.price}>R$ {(VasosCimento[id].preco2 * 2.2).toFixed(2)}</div>
                         </div>
                         <div className={styles.infos}>
-                            <div>Medidas</div>
+                            <div className={styles.titleNormal}>Medidas</div>
                             <div className={styles.tamanho}>{VasosCimento[id].medidas3}</div>
-                            <div>Tamanho</div>
+                            <div className={styles.titleNormal}>Tamanho</div>
                             <div className={styles.tamanho}>{VasosCimento[id].tamanho3}</div>
-                            <div>Preço</div>
+                            <div className={styles.titleNormal}>Preço</div>
                             <div className={styles.price}>R$ {(VasosCimento[id].preco3 * 2.2).toFixed(2)}</div>
                         </div>
                     </div>
@@ -51,8 +52,8 @@ const VasosCim = () => {
             <div className={styles.vasosList}>
                 {VasosCimento.map((item, index) => (
                     <div key={index} className={styles.eachVaso} onClick={() => changeDisplay(index)}>
-                        <div>
-                            <img src={item.img} alt="" />
+                        <div>{item.tipo}</div>
+                        <div className={styles.imgProd} style={{ backgroundImage: `url(${item.img})` }}>
                         </div>
                         <h3>{item.nome}</h3>
                     </div>

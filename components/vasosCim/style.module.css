@@ -11,10 +11,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid black;
     padding: 5px;
     width: 250px;
     margin: 5px;
+    box-shadow: 1px 1px 5px black;
+    cursor: pointer;
+    border-radius: 5px;
 }
 .eachVaso img {
     height: 230px;
@@ -25,7 +27,7 @@
 
 .vasoInfo {
     position: absolute;
-    height: 800px;
+    height: 900px;
     width: 1200px;
     background: linear-gradient(rgb(212, 212, 120), rgb(255, 255, 255));
     flex-direction: column;
@@ -61,9 +63,12 @@
     align-items: center;
     flex-direction: column;
 }
-.content img {
-    width: 450px;
+.content .img {
+    height: 400px;
+    width: 400px;
     margin: 10px;
+    background-size: 100%;
+    background-position: center;
 }
 .price {
     font-weight: bold;
@@ -98,13 +103,25 @@
     flex-wrap: wrap;
 }
 
+.titleNormal {
+    font-size: 13px;
+}
+
+.imgProd {
+    height: 200px;
+    width: 200px;
+    background-size: 100%;
+    background-position: center;
+}
+
 @media (max-width: 500px) {
     .content {
     }
     .vasoInfo {
         width: 90%;
     }
-    .content img {
+    .content .img {
+        height: 350px;
         width: 90%;
     }
     .infosArea {
@@ -112,6 +129,6 @@
     }
     .price {
         font-weight: bold;
-        font-size: 15px;
+        font-size: 16px;
     }
 }
