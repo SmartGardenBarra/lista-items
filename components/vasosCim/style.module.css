@@ -41,7 +41,7 @@
 
 .vasoInfo {
     position: fixed;
-    height: 800px;
+    height: 700px;
     width: 1200px;
     background: linear-gradient(rgb(212, 212, 120), rgb(255, 255, 255));
     flex-direction: column;
