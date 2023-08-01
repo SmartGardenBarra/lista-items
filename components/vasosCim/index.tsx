@@ -13,6 +13,9 @@ const VasosCim = () => {
 
     return (
         <div className={styles.main}>
+            <div className={styles.inputArea}>
+                <input type="text" className={styles.input} placeholder='pesquisar produto' />
+            </div>
             <div className={styles.vasoInfo} style={{ display: display }}>
                 <div className={styles.topArea}>
                     <div className={styles.close} onClick={() => setDisplay('none')}>X</div>
@@ -52,10 +55,10 @@ const VasosCim = () => {
             <div className={styles.vasosList}>
                 {VasosCimento.map((item, index) => (
                     <div key={index} className={styles.eachVaso} onClick={() => changeDisplay(index)}>
-                        <div>{item.tipo}</div>
+                        <h3>{item.nome}</h3>
                         <div className={styles.imgProd} style={{ backgroundImage: `url(${item.img})` }}>
                         </div>
-                        <h3>{item.nome}</h3>
+                        <div>{item.tipo}</div>
                     </div>
                 ))}
             </div>
