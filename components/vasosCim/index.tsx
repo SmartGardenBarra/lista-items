@@ -48,14 +48,16 @@ const VasosCim = () => {
                     </div>
                 </div>
             </div>
-            {VasosCimento.map((item, index) => (
-                <div key={index} className={styles.eachVaso} onClick={() => changeDisplay(index)}>
-                    <div>
-                        <img src={item.img} alt="" />
+            <div className={styles.vasosList}>
+                {VasosCimento.map((item, index) => (
+                    <div key={index} className={styles.eachVaso} onClick={() => changeDisplay(index)}>
+                        <div>
+                            <img src={item.img} alt="" />
+                        </div>
+                        <h3>{item.nome}</h3>
                     </div>
-                    <h3>{item.nome}</h3>
-                </div>
-            ))}
+                ))}
+            </div>
         </div>
     )
 }

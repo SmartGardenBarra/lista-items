@@ -13,6 +13,7 @@
     flex-direction: column;
     border: 1px solid black;
     padding: 5px;
+    width: 250px;
     margin: 5px;
 }
 .eachVaso img {
@@ -86,6 +87,15 @@
 
 .tamanho {
     font-weight: bold;
+}
+
+.vasosList {
+    width: 90%;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 @media (max-width: 500px) {
