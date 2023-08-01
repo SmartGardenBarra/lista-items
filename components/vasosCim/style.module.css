@@ -1,0 +1,83 @@
+.main {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.eachVaso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+.eachVaso img {
+    height: 230px;
+}
+.eachVaso h3 {
+
+}
+
+.vasoInfo {
+    position: absolute;
+    height: 1000px;
+    width: 1200px;
+    background: linear-gradient(rgb(212, 212, 120), rgb(255, 255, 255));
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px black;
+}
+.topArea {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+.close {
+    background-color: black;
+    color: red;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px;
+}
+.close:hover {
+    background-color: rgb(61, 61, 61);
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.content img {
+    height: 450px;
+}
+.price {
+    font-weight: bold;
+    font-size: 25px;
+}
+.infosArea {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
