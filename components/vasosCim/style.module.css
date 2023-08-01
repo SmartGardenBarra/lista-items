@@ -1,4 +1,5 @@
 .main {
+    min-height: 100vh;
     width: 70%;
     display: flex;
     justify-content: center;
@@ -23,7 +24,7 @@
 
 .vasoInfo {
     position: absolute;
-    height: 1000px;
+    height: 800px;
     width: 1200px;
     background: linear-gradient(rgb(212, 212, 120), rgb(255, 255, 255));
     flex-direction: column;
@@ -53,14 +54,15 @@
 }
 
 .content {
-    flex: 1;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 .content img {
-    height: 450px;
+    width: 450px;
+    margin: 10px;
 }
 .price {
     font-weight: bold;
@@ -78,6 +80,28 @@
     align-items: center;
     flex-direction: column;
     flex: 1;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 1px solid rgb(145, 145, 145);
+    border-right: 1px solid rgb(145, 145, 145);
+}
+
+.tamanho {
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    .content {
+    }
+    .vasoInfo {
+        width: 90%;
+    }
+    .content img {
+        width: 90%;
+    }
+    .infosArea {
+        width: 90%;
+    }
+    .price {
+        font-weight: bold;
+        font-size: 15px;
+    }
 }

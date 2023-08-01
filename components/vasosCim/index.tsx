@@ -23,24 +23,27 @@ const VasosCim = () => {
                     <div className={styles.infosArea}>
                         <div className={styles.infos}>
                             <div>Medidas</div>
-                            <div>{VasosCimento[id].medidas}</div>
+                            <div className={styles.tamanho}>{VasosCimento[id].medidas}</div>
                             <div>Tamanho</div>
-                            <div>{VasosCimento[id].tamanho}</div>
-                            <div className={styles.price}>R$ {VasosCimento[id].preco},00</div>
+                            <div className={styles.tamanho}>{VasosCimento[id].tamanho}</div>
+                            <div>Preço</div>
+                            <div className={styles.price}>R$ {(VasosCimento[id].preco * 2.2).toFixed(2)}</div>
                         </div>
                         <div className={styles.infos}>
                             <div>Medidas</div>
-                            <div>{VasosCimento[id].medidas2}</div>
+                            <div className={styles.tamanho}>{VasosCimento[id].medidas2}</div>
                             <div>Tamanho</div>
-                            <div>{VasosCimento[id].tamanho2}</div>
-                            <div className={styles.price}>R$ {VasosCimento[id].preco2},00</div>
+                            <div className={styles.tamanho}>{VasosCimento[id].tamanho2}</div>
+                            <div>Preço</div>
+                            <div className={styles.price}>R$ {(VasosCimento[id].preco2 * 2.2).toFixed(2)}</div>
                         </div>
                         <div className={styles.infos}>
                             <div>Medidas</div>
-                            <div>{VasosCimento[id].medidas3}</div>
+                            <div className={styles.tamanho}>{VasosCimento[id].medidas3}</div>
                             <div>Tamanho</div>
-                            <div>{VasosCimento[id].tamanho3}</div>
-                            <div className={styles.price}>R$ {VasosCimento[id].preco3},00</div>
+                            <div className={styles.tamanho}>{VasosCimento[id].tamanho3}</div>
+                            <div>Preço</div>
+                            <div className={styles.price}>R$ {(VasosCimento[id].preco3 * 2.2).toFixed(2)}</div>
                         </div>
                     </div>
                 </div>
