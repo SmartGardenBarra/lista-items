@@ -6,7 +6,11 @@ const itemUnico = [
     { nome: '', img: '', tipo: '', preco: 0, medidas: '?', tamanho: '?', preco2: 49, medidas2: '45x48', tamanho2: '?', preco3: 0, medidas3: '?', tamanho3: '?' },
 ]
 
-const VasosCim = () => {
+type Props = {
+    categoria: string,
+}
+
+const VasosCim = (categoria: Props) => {
     const [display, setDisplay] = useState('none')
     const [id, setId] = useState(0)
     const [prodName, setProdName] = useState('')
@@ -16,7 +20,7 @@ const VasosCim = () => {
         setDisplay('flex')
         setId(idProd)
         itemUnico.shift()
-        itemUnico.push( { nome: filterList[idProd].nome, img: filterList[idProd].img, tipo: filterList[idProd].tipo, preco: filterList[idProd].preco, medidas: filterList[idProd].medidas, tamanho: filterList[idProd].tamanho, preco2: filterList[idProd].preco2, medidas2: filterList[idProd].medidas2, tamanho2: filterList[idProd].tamanho2, preco3: filterList[idProd].preco3, medidas3: filterList[idProd].medidas3, tamanho3: filterList[idProd].tamanho3 })
+        itemUnico.push({ nome: filterList[idProd].nome, img: filterList[idProd].img, tipo: filterList[idProd].tipo, preco: filterList[idProd].preco, medidas: filterList[idProd].medidas, tamanho: filterList[idProd].tamanho, preco2: filterList[idProd].preco2, medidas2: filterList[idProd].medidas2, tamanho2: filterList[idProd].tamanho2, preco3: filterList[idProd].preco3, medidas3: filterList[idProd].medidas3, tamanho3: filterList[idProd].tamanho3 })
     }
 
     const filterBySearch = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -81,20 +85,15 @@ const VasosCim = () => {
             <div className={styles.vasosList}>
                 {filterList.map((item, index) => (
                     <>
-                        {item.preco == 0 && item.preco2 == 0 && item.preco3 == 0 ?
-                            <div key={index} className={styles.eachVaso} onClick={() => changeDisplay(index)} style={{ backgroundColor: 'rgb(145, 145, 145)' }}>
-                                <h3>{item.nome}</h3>
-                                <div className={styles.imgProd} style={{ backgroundImage: `url(${item.img})` }}>
-                                </div>
-                                <div>{item.tipo}</div>
-                            </div>
-                            :
+                        {item.tipo === categoria.categoria ?
                             <div key={index} className={styles.eachVaso} onClick={() => changeDisplay(index)}>
                                 <h3>{item.nome}</h3>
                                 <div className={styles.imgProd} style={{ backgroundImage: `url(${item.img})` }}>
                                 </div>
                                 <div>{item.tipo}</div>
                             </div>
+                            :
+                            ''
                         }
                     </>
                 ))}

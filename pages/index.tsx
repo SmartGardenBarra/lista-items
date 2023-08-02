@@ -3,10 +3,18 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import VasosCim from '../components/vasosCim';
+import { useState } from 'react';
 
 const inter = Inter({ subsets: ['latin'] })
 
+const buttons = [
+  { name: 'Vasos de Cimento', value: 'vaso de cimento', color: 'rgb(196, 196, 196)' },
+  { name: 'Vasos de Resina', value: 'vaso de resina', color: 'rgb(196, 196, 196)' },
+]
+
 export default function Home() {
+  const [categoria, setCategoria] = useState('vaso de cimento');
+  const [id, setId] = useState(0);
   return (
     <>
       <Head>
@@ -16,11 +24,20 @@ export default function Home() {
         <link rel="icon" href="/vasosCimento/guirlandaLiso.jpg" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
+        <div><img src="./smart-logo.png" alt="" style={{ width: '200px' }} /></div>
         <div className={styles.buttonArea}>
-          <button>Vasos de Cimento</button>
-          <button>Vasos de Barro</button>
+          {buttons.map((item, index) => (
+            <>
+              {index === id ?
+                <button onClick={() => { setCategoria(`${item.value}`), setId(index) }} style={{ backgroundColor: 'rgb(125, 194, 21)' }}>{item.name}</button>
+                :
+                <button onClick={() => { setCategoria(`${item.value}`), setId(index) }} style={{ backgroundColor: `${item.color}` }}>{item.name}</button>
+              }
+            </>
+          ))}
         </div>
-        <VasosCim />
+        <h1>{buttons[id].name}</h1>
+        <VasosCim categoria={categoria} />
       </main>
     </>
   )
