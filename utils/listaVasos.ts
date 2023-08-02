@@ -21,6 +21,37 @@ const VasosCimento = [
     { nome: 'Vaso Frizado', img: './vasosCimento/vasoFrizado.jpg', tipo: 'vaso de cimento', preco: 0, medidas: '?', tamanho: '?', preco2: 32, medidas2: '36x37', tamanho2: 'M', preco3: 47, medidas3: '45x48', tamanho3: 'G' },
     
     { nome: 'Vaso Colonial', img: './vasosCimento/vasoColonial.jpg', tipo: 'vaso de cimento', preco: 0, medidas: '?', tamanho: '?', preco2: 32, medidas2: '43x35', tamanho2: 'M', preco3: 49, medidas3: '51x41', tamanho3: 'G' },
+    
+    { nome: 'Vaso 3D', img: './vasosCimento/vaso3D.jpg', tipo: 'vaso de cimento', preco: 25, medidas: '?', tamanho: 'P', preco2: 32, medidas2: '?', tamanho2: 'M', preco3: 0, medidas3: '?', tamanho3: '?' },
+
+    { nome: 'Vaso Cesto', img: './vasosCimento/vasoCesto.jpg', tipo: 'vaso de cimento', preco: 15, medidas: '27x22', tamanho: 'PP', preco2: 0, medidas2: '43x33', tamanho2: 'M', preco3: 0, medidas3: '56x44', tamanho3: 'G' },
+    
+    { nome: 'Vaso Pilão', img: './vasosCimento/vasoPilao.jpg', tipo: 'vaso de cimento', preco: 0, medidas: '?', tamanho: '?', preco2: 49, medidas2: '?', tamanho2: '?', preco3: 0, medidas3: '?', tamanho3: '?' },
+    
+    { nome: 'Vaso Pombo', img: './vasosCimento/vasoPombo.jpg', tipo: 'vaso de cimento', preco: 0, medidas: '?', tamanho: '?', preco2: 50, medidas2: '51x46', tamanho2: '?', preco3: 0, medidas3: '?', tamanho3: '?' },
+    
+    { nome: 'Caixa Romana', img: './vasosCimento/cxRomana.jpg', tipo: 'vaso de cimento', preco: 0, medidas: '?', tamanho: '?', preco2: 49, medidas2: '49x38', tamanho2: '?', preco3: 0, medidas3: '?', tamanho3: '?' },
+
+    { nome: 'Trança Fina', img: './vasosCimento/trancaFina.jpg', tipo: 'vaso de cimento', preco: 0, medidas: '?', tamanho: '?', preco2: 49, medidas2: '45x48', tamanho2: '?', preco3: 0, medidas3: '?', tamanho3: '?' },
+
+    { nome: 'Vaso Romano', img: './vasosCimento/vasoRomano.jpg', tipo: 'vaso de cimento', preco: 27, medidas: '30x36', tamanho: '?', preco2: 0, medidas2: '?', tamanho2: '?', preco3: 0, medidas3: '?', tamanho3: '?' },
+
+    { nome: 'Vaso Bonsai', img: './vasosCimento/vasoBonsai.jpg', tipo: 'vaso de cimento', preco: 0, medidas: '?', tamanho: '?', preco2: 73, medidas2: '59x56', tamanho2: 'M', preco3: 200, medidas3: '77x70', tamanho3: 'G' },
+
+    { nome: 'Caixa Raio de Sol', img: './vasosCimento/cxRaioDeSol.jpg', tipo: 'vaso de cimento', preco: 25, medidas: '?', tamanho: 'PP', preco2: 37, medidas2: '?', tamanho2: 'M', preco3: 52, medidas3: '?', tamanho3: 'G' },
+
+    { nome: 'Caixa Argoria', img: './vasosCimento/cxArgoria.jpg', tipo: 'vaso de cimento', preco: 28, medidas: '30x31', tamanho: 'P', preco2: 43, medidas2: '40x43', tamanho2: 'M', preco3: 0, medidas3: '?', tamanho3: '?' },
+
+    { nome: 'Caixa Frizada', img: './vasosCimento/cxFrizada.jpg', tipo: 'vaso de cimento', preco: 0, medidas: '?', tamanho: '?', preco2: 67, medidas2: '47x72', tamanho2: '?', preco3: 0, medidas3: '?', tamanho3: '?' },
+
+    { nome: 'Caixa Botana', img: './vasosCimento/cxBotana.jpg', tipo: 'vaso de cimento', preco: 0, medidas: '?', tamanho: '?', preco2: 43, medidas2: '42x43', tamanho2: '?', preco3: 0, medidas3: '?', tamanho3: '?' },
+
+    { nome: 'Cilindro', img: './vasosCimento/cilindro.jpg', tipo: 'vaso de cimento', preco: 0, medidas: '?', tamanho: '?', preco2: 45, medidas2: '30x60', tamanho2: '?', preco3: 0, medidas3: '?', tamanho3: '?' },
+
+    { nome: 'Vaso Corrente', img: './vasosCimento/vasoCorrente.jpg', tipo: 'vaso de cimento', preco: 0, medidas: '?', tamanho: '?', preco2: 42, medidas2: '50x43', tamanho2: '?', preco3: 0, medidas3: '?', tamanho3: '?' },
+
+    { nome: 'Vaso Margarida', img: './vasosCimento/vasoMargarida.jpg', tipo: 'vaso de cimento', preco: 0, medidas: '?', tamanho: '?', preco2: 30, medidas2: '27x32', tamanho2: '?', preco3: 0, medidas3: '?', tamanho3: '?' },
+
 ]
 
 export default VasosCimento;

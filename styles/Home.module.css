@@ -8,12 +8,21 @@
   min-height: 100vh;
 }
 
+.main .buttonArea {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .main button {
   height: 40px;
-  width: 170px;
-  background-color: aquamarine;
+  width: 150px;
+  background-color: rgb(196, 196, 196);
   border: 1px solid black;
   cursor: pointer;
-  margin: 10px;
+  margin: 3px;
   font-weight: bold;
+  box-shadow: 1px 1px 5px black;
+  border-radius: 5px;
 }

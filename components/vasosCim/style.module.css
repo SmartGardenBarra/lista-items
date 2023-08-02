@@ -1,9 +1,10 @@
 .main {
-    min-height: 100vh;
+    min-height: 10vh;
     width: 70%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .inputArea {
     display: flex;
@@ -47,6 +48,7 @@
     flex-direction: column;
     border-radius: 20px;
     box-shadow: 1px 1px 5px black;
+    top: 100px;
 }
 .topArea {
     width: 100%;
