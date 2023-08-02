@@ -10,6 +10,7 @@ const inter = Inter({ subsets: ['latin'] })
 const buttons = [
   { name: 'Vasos de Cimento', value: 'vaso de cimento', color: 'rgb(196, 196, 196)' },
   { name: 'Vasos de Resina', value: 'vaso de resina', color: 'rgb(196, 196, 196)' },
+  { name: 'Fibra de Côco', value: 'fibra de côco', color: 'rgb(196, 196, 196)' },
 ]
 
 export default function Home() {
