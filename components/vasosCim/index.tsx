@@ -58,7 +58,7 @@ const VasosCim = (categoria: Props) => {
                                     <div className={styles.titleNormal}>Tamanho</div>
                                     <div className={styles.tamanho}>{item.tamanho}</div>
                                     <div className={styles.titleNormal}>Preço</div>
-                                    <div className={styles.price}>R$ {(item.preco * 2.2).toFixed(2)}</div>
+                                    <div className={styles.price}>R$ {(item.preco * 2.2).toFixed(0)},00</div>
                                 </div>
                                 <div className={styles.infos}>
                                     <div className={styles.titleNormal}>Medidas</div>
@@ -66,15 +66,15 @@ const VasosCim = (categoria: Props) => {
                                     <div className={styles.titleNormal}>Tamanho</div>
                                     <div className={styles.tamanho}>{item.tamanho2}</div>
                                     <div className={styles.titleNormal}>Preço</div>
-                                    <div className={styles.price}>R$ {(item.preco2 * 2.2).toFixed(2)}</div>
+                                    <div className={styles.price}>R$ {(item.preco2 * 2.2).toFixed(0)},00</div>
                                 </div>
-                                <div className={styles.infos}>
+                                <div className={styles.infos} >
                                     <div className={styles.titleNormal}>Medidas</div>
                                     <div className={styles.tamanho}>{item.medidas3}</div>
                                     <div className={styles.titleNormal}>Tamanho</div>
                                     <div className={styles.tamanho}>{item.tamanho3}</div>
                                     <div className={styles.titleNormal}>Preço</div>
-                                    <div className={styles.price}>R$ {(item.preco3 * 2.2).toFixed(2)}</div>
+                                    <div className={styles.price}>R$ {(item.preco3 * 2.2).toFixed(0)},00</div>
                                 </div>
                             </div>
                         </>

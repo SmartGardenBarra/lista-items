@@ -2,7 +2,7 @@ const VasosCimento = [
 
     //VASOS DE CIMENTO
 
-    { nome: 'Vaso X Médio', img: './vasosCimento/vasoXMédio.jpg', tipo: 'vaso de cimento', preco: 14, medidas: '21x23', tamanho: 'P', preco2: 25, medidas2: '26x31', tamanho2: 'M', preco3: 32, medidas3: '33x38', tamanho3: 'G' },
+    { nome: 'Vaso X Medio', img: './vasosCimento/vasoXMédio.jpg', tipo: 'vaso de cimento', preco: 14, medidas: '21x23', tamanho: 'P', preco2: 25, medidas2: '26x31', tamanho2: 'M', preco3: 32, medidas3: '33x38', tamanho3: 'G' },
 
     { nome: 'Vaso Sasso', img: './vasosCimento/vasoSasso.jpg', tipo: 'vaso de cimento', preco: 28, medidas: '20x40', tamanho: 'P', preco2: 32, medidas2: '25x51', tamanho2: 'M', preco3: 48, medidas3: '30x60', tamanho3: 'G' },
 
@@ -11,8 +11,6 @@ const VasosCimento = [
     { nome: 'Jardineira Citta', img: './vasosCimento/jardineiraCitta.jpg', tipo: 'vaso de cimento', preco: 0, medidas: '?x?', tamanho: '?', preco2: 74, medidas2: '38x50', tamanho2: 'M', preco3: 0, medidas3: '?x?', tamanho3: '?' },
 
     { nome: 'Guirlanda Liso', img: './vasosCimento/guirlandaLiso.jpg', tipo: 'vaso de cimento', preco: 0, medidas: '?x?', tamanho: '?', preco2: 62, medidas2: '56x55', tamanho2: 'M', preco3: 0, medidas3: '?x?', tamanho3: '?' },
-
-    { nome: 'Jardineira Fina', img: './vasosCimento/jardineiraFina.jpg', tipo: 'vaso de cimento', preco: 25, medidas: '60x17', tamanho: '60', preco2: 28, medidas2: '80x17', tamanho2: '80', preco3: 32, medidas3: '100x17', tamanho3: '100' },
 
     { nome: 'Vaso Sino', img: './vasosCimento/vasoSino.jpg', tipo: 'vaso de cimento', preco: 0, medidas: '?', tamanho: '?', preco2: 32, medidas2: '38x33', tamanho2: 'M', preco3: 0, medidas3: '?', tamanho3: '?' },
 
@@ -63,6 +61,85 @@ const VasosCimento = [
     { nome: 'Jardineira Alta Lisa', img: './vasosCimento/jardineiraAltaLisa.jpg', tipo: 'vaso de cimento', preco: 0, medidas: '?', tamanho: '?', preco2: 0, medidas2: '?', tamanho2: '?', preco3: 65, medidas3: '100x35x35', tamanho3: '100' },
 
     { nome: 'Vaso Cone', img: './vasosCimento/vasoCone.jpg', tipo: 'vaso de cimento', preco: 22, medidas: '33x25', tamanho: 'PP', preco2: 47, medidas2: '50x57', tamanho2: 'M', preco3: 80, medidas3: '65x64', tamanho3: 'G' },
+
+    {
+        nome: 'Jardineira Fina', img: './vasosCimento/jardineiraFina.jpg',
+        tipo: 'vaso de cimento',
+        preco: 0,
+        medidas: '?x?',
+        tamanho: '?',
+        preco2: 0,
+        medidas2: '?x?',
+        tamanho2: '?',
+        preco3: 30,
+        medidas3: '65x64',
+        tamanho3: '100'
+    },
+    {
+        nome: 'Taça Baby', img: './vasosCimento/tacaBaby.jpg',
+        tipo: 'vaso de cimento',
+        preco: 0,
+        medidas: '?x?',
+        tamanho: '?',
+        preco2: 27,
+        medidas2: '30x36',
+        tamanho2: '?',
+        preco3: 0,
+        medidas3: '?x?',
+        tamanho3: '?'
+    },
+    {
+        nome: 'Caixa Lira Fina', img: './vasosCimento/cxLira.jpg',
+        tipo: 'vaso de cimento',
+        preco: 29,
+        medidas: '?x?',
+        tamanho: 'Baixa',
+        preco2: 32,
+        medidas2: '?x?',
+        tamanho2: 'Alta',
+        preco3: 0,
+        medidas3: '?x?',
+        tamanho3: '?'
+    },
+    {
+        nome: 'Caixa Lisa Reta', img: './vasosCimento/cxReta.jpg',
+        tipo: 'vaso de cimento',
+        preco: 32,
+        medidas: '30x30x30',
+        tamanho: '30',
+        preco2: 45,
+        medidas2: '40x40x40',
+        tamanho2: '40',
+        preco3: 65,
+        medidas3: '50x50x50',
+        tamanho3: '50'
+    },
+    {
+        nome: 'Jardineira Delta', img: './vasosCimento/jardineiraDelta.jpg',
+        tipo: 'vaso de cimento',
+        preco: 0,
+        medidas: '?x?',
+        tamanho: '?',
+        preco2: 32,
+        medidas2: '21x60x24',
+        tamanho2: '60',
+        preco3: 0,
+        medidas3: '?x?',
+        tamanho3: '?'
+    },
+    {
+        nome: 'Vaso Xadrez', img: './vasosCimento/vasoXadrez.jpg',
+        tipo: 'vaso de cimento',
+        preco: 0,
+        medidas: '?x?',
+        tamanho: '?',
+        preco2: 25,
+        medidas2: '26x27',
+        tamanho2: 'M',
+        preco3: 0,
+        medidas3: '?x?',
+        tamanho3: '?'
+    },
 
     //VASOS DE RESINA
 
@@ -149,7 +226,7 @@ const VasosCimento = [
         medidas3: '59x39x25',
         tamanho3: '59'
     },
-    
+
     {
         nome: 'Vaso Quadrado Apolo', img: './vasosResina/vasoApolo.png',
         tipo: 'vaso de resina',
@@ -163,7 +240,7 @@ const VasosCimento = [
         medidas3: '59x39x25',
         tamanho3: '54'
     },
-    
+
     {
         nome: 'Vaso Sextavado Nice', img: './vasosResina/vasoNice.png',
         tipo: 'vaso de resina',
@@ -177,7 +254,7 @@ const VasosCimento = [
         medidas3: '47x36x17',
         tamanho3: '47'
     },
-    
+
     {
         nome: 'Vaso Redondo Elba', img: './vasosResina/vasoElba.png',
         tipo: 'vaso de resina',
@@ -191,7 +268,7 @@ const VasosCimento = [
         medidas3: '41x41x29',
         tamanho3: '41'
     },
-    
+
     {
         nome: 'Vaso Bacia Silicia', img: './vasosResina/vasoSicilia.png',
         tipo: 'vaso de resina',
@@ -205,7 +282,7 @@ const VasosCimento = [
         medidas3: '?x?',
         tamanho3: '?'
     },
-    
+
     {
         nome: 'Vaso Bacia Siena', img: './vasosResina/vasoSiena.png',
         tipo: 'vaso de resina',
@@ -219,7 +296,7 @@ const VasosCimento = [
         medidas3: '?x?',
         tamanho3: '?'
     },
-    
+
     {
         nome: 'Vaso Bacia Verona', img: './vasosResina/vasoVerona.png',
         tipo: 'vaso de resina',
@@ -233,7 +310,7 @@ const VasosCimento = [
         medidas3: '?x?',
         tamanho3: '?'
     },
-    
+
     {
         nome: 'Vaso Bacia Safira', img: './vasosResina/vasoSafira.png',
         tipo: 'vaso de resina',
@@ -247,7 +324,7 @@ const VasosCimento = [
         medidas3: '?x?',
         tamanho3: '?'
     },
-    
+
     {
         nome: 'Vaso Bacia Florença', img: './vasosResina/vasoFlorenca.jpg',
         tipo: 'vaso de resina',
@@ -261,7 +338,7 @@ const VasosCimento = [
         medidas3: '?x?',
         tamanho3: '?'
     },
-    
+
     {
         nome: 'Jardineira Tamara', img: './vasosResina/jardineiraTamara.jpg',
         tipo: 'vaso de resina',
@@ -275,7 +352,7 @@ const VasosCimento = [
         medidas3: '22x80x30',
         tamanho3: '80'
     },
-    
+
     {
         nome: 'Vaso Maragogi', img: './vasosResina/vasoMaragogi.png',
         tipo: 'vaso de resina',
@@ -289,7 +366,7 @@ const VasosCimento = [
         medidas3: '40x40x40',
         tamanho3: '40'
     },
-    
+
     {
         nome: 'Prato Redondo', img: './vasosResina/pratoRedondo.png',
         tipo: 'vaso de resina',
@@ -303,7 +380,7 @@ const VasosCimento = [
         medidas3: '4x57x52',
         tamanho3: '52'
     },
-    
+
     {
         nome: 'Prato Quadrado', img: './vasosResina/pratoQuadrado.png',
         tipo: 'vaso de resina',
@@ -485,6 +562,22 @@ const VasosCimento = [
         preco2: 54.6,
         medidas2: '18x36',
         tamanho2: 'M',
+        preco3: 0,
+        medidas3: '?x?',
+        tamanho3: '?'
+    },
+
+    //VASOS DE BARRO
+
+    {
+        nome: 'Não há produtos disponiveis ainda', img: '',
+        tipo: 'vaso de barro',
+        preco: 0,
+        medidas: '?x?',
+        tamanho: '?',
+        preco2: 0,
+        medidas2: '?x?',
+        tamanho2: '?',
         preco3: 0,
         medidas3: '?x?',
         tamanho3: '?'
