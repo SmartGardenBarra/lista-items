@@ -54,7 +54,7 @@ const VasosCim = (categoria: Props) => {
                 <div className={styles.content}>
                     {itemUnico.map((item, index) => (
                         <>
-                            <h2>{item.nome}</h2>
+                            <h2 style={{textAlign: 'center'}}>{item.nome}</h2>
                             <div className={styles.img} style={{ backgroundImage: `url(${item.img})` }}>
                             </div>
                             <div className={styles.infosArea}>
