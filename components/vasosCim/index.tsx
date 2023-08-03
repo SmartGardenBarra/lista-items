@@ -2,26 +2,6 @@ import VasosCimento from '@/utils/listaVasos';
 import styles from './style.module.css';
 import { useState } from 'react';
 
-type ListProps = {
-    nome: string,
-    img: string,
-    tipo: string,
-    preco: number,
-    medidas: string,
-    tamanho: string,
-    preco2: number,
-    medidas2: string,
-    tamanho2: string,
-    preco3: number,
-    medidas3: string,
-    tamanho3: string,
-    preco4?: number,
-    medidas4?: string,
-    tamanho4?: string,
-    preco5?: number,
-    medidas5?: string,
-    tamanho5?: string
-}
 
 const itemUnico = [
     { nome: '', img: '', tipo: '', preco: 0, medidas: '?', tamanho: '?', preco2: 49, medidas2: '45x48', tamanho2: '?', preco3: 0, medidas3: '?', tamanho3: '?', preco4: 0, medidas4: '?', tamanho4: '?', preco5: 0, medidas5: '?', tamanho5: '?', },
@@ -35,7 +15,7 @@ const VasosCim = (categoria: Props) => {
     const [display, setDisplay] = useState('none')
     const [id, setId] = useState(0)
     const [prodName, setProdName] = useState('')
-    const [filterList, setFilterList] = useState<[ListProps]>(VasosCimento)
+    const [filterList, setFilterList] = useState(VasosCimento)
 
     const changeDisplay = (idProd: number) => {
         setDisplay('flex')
