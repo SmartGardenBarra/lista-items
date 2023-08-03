@@ -22,6 +22,9 @@
     border-radius: 4px;
     border: 1px solid black;
 }
+.span {
+    font-size: 19px;
+}
 .eachVaso {
     display: flex;
     justify-content: center;
@@ -97,20 +100,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .infos {
     display: flex;
+
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    flex: 1;
+    width: 315px;
     border-left: 1px solid rgb(145, 145, 145);
     border-right: 1px solid rgb(145, 145, 145);
     padding: 2px;
+    border-bottom: 1px solid black;
 }
 
 .tamanho {
     font-weight: bold;
+    font-size: 18px;
 }
 
 .vasosList {
@@ -123,7 +129,7 @@
 }
 
 .titleNormal {
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .imgProd {
@@ -131,6 +137,30 @@
     width: 200px;
     background-size: 100%;
     background-position: center;
+}
+
+.infosItens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.upButton {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(32, 196, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
 }
 
 @media (max-width: 500px) {
@@ -148,6 +178,13 @@
     }
     .price {
         font-weight: bold;
-        font-size: 16px;
+        font-size: 19px;
+    }
+    .infos {
+        height: 40px;
+        width: 100%;
+    }
+    .span {
+        font-size: 15px;
     }
 }
