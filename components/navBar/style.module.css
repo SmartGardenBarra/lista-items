@@ -1,0 +1,58 @@
+.header {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 1px 1px 5px black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+.header div img {
+    width: 200px;
+}
+
+.header .menu {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .menu a {
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.menuItem {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subMenuItem {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra {
+    height: 5px;
+    width: 100%;
+    background-color: greenyellow;
+}
+
+@media (max-width: 400px) {
+
+    .header div img {
+        width: 150px;
+    }
+}

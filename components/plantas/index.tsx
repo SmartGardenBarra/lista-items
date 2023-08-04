@@ -1,21 +1,21 @@
-import VasosCimento from '@/utils/listaVasos';
+import PlantasList from '@/utils/listaPlantas';
 import styles from './style.module.css';
 import { useState } from 'react';
 
 
 const itemUnico = [
-    { nome: '', img: '', tipo: '', preco: 0, medidas: '?', tamanho: '?', preco2: 49, medidas2: '45x48', tamanho2: '?', preco3: 0, medidas3: '?', tamanho3: '?', preco4: 0, medidas4: '?', tamanho4: '?', preco5: 0, medidas5: '?', tamanho5: '?', },
+    { nome: '', img: '', tipo: '', preco: 0, medidas: '?', tamanho: '?', preco2: 0, medidas2: '?', tamanho2: '?', preco3: 0, medidas3: '?', tamanho3: '?', preco4: 0, medidas4: '?', tamanho4: '?', preco5: 0, medidas5: '?', tamanho5: '?', },
 ]
 
 type Props = {
     categoria: string,
 }
 
-const VasosCim = (categoria: Props) => {
+const PlantasArea = (categoria: Props) => {
     const [display, setDisplay] = useState('none')
     const [id, setId] = useState(0)
     const [prodName, setProdName] = useState('')
-    const [filterList, setFilterList] = useState(VasosCimento)
+    const [filterList, setFilterList] = useState(PlantasList)
 
     const changeDisplay = (idProd: number) => {
         setDisplay('flex')
@@ -26,7 +26,7 @@ const VasosCim = (categoria: Props) => {
 
     const filterBySearch = (event: React.ChangeEvent<HTMLInputElement>) => {
         const query = event.target.value;
-        var updateList = [...VasosCimento];
+        var updateList = [...PlantasList];
 
         updateList = updateList.filter((item) => {
             return item.nome.toLowerCase().indexOf(query.toLowerCase()) !== -1;
@@ -72,7 +72,7 @@ const VasosCim = (categoria: Props) => {
                                         </div>
                                         <div className={styles.infosItens}>
                                             <div className={styles.titleNormal} style={{ marginLeft: '2px', marginRight: '2px' }}>Preço:</div>
-                                            <div className={styles.price}>R$ {(item.preco * 2.2).toFixed(0)},<span className={styles.span} >00</span></div>
+                                            <div className={styles.price}>R$ {(item.preco).toFixed(0)},<span className={styles.span} >00</span></div>
                                         </div>
                                     </div>
                                 }
@@ -90,7 +90,7 @@ const VasosCim = (categoria: Props) => {
                                         </div>
                                         <div className={styles.infosItens}>
                                             <div className={styles.titleNormal} style={{ marginLeft: '2px', marginRight: '2px' }}>Preço:</div>
-                                            <div className={styles.price}>R$ {(item.preco2 * 2.2).toFixed(0)},<span className={styles.span} >00</span></div>
+                                            <div className={styles.price}>R$ {(item.preco2).toFixed(0)},<span className={styles.span} >00</span></div>
                                         </div>
                                     </div>
                                 }
@@ -108,7 +108,7 @@ const VasosCim = (categoria: Props) => {
                                         </div>
                                         <div className={styles.infosItens}>
                                             <div className={styles.titleNormal} style={{ marginLeft: '2px', marginRight: '2px' }}>Preço:</div>
-                                            <div className={styles.price}>R$ {(item.preco3 * 2.2).toFixed(0)},<span className={styles.span} >00</span></div>
+                                            <div className={styles.price}>R$ {(item.preco3).toFixed(0)},<span className={styles.span} >00</span></div>
                                         </div>
                                     </div>
                                 }
@@ -126,7 +126,7 @@ const VasosCim = (categoria: Props) => {
                                         </div>
                                         <div className={styles.infosItens}>
                                             <div className={styles.titleNormal} style={{ marginLeft: '2px', marginRight: '2px' }}>Preço:</div>
-                                            <div className={styles.price}>R$ {(item.preco4 * 2.2).toFixed(0)},<span className={styles.span} >00</span></div>
+                                            <div className={styles.price}>R$ {(item.preco4).toFixed(0)},<span className={styles.span} >00</span></div>
                                         </div>
                                     </div>
                                 }
@@ -144,7 +144,7 @@ const VasosCim = (categoria: Props) => {
                                         </div>
                                         <div className={styles.infosItens}>
                                             <div className={styles.titleNormal} style={{ marginLeft: '2px', marginRight: '2px' }}>Preço:</div>
-                                            <div className={styles.price}>R$ {(item.preco5 * 2.2).toFixed(0)},<span className={styles.span} >00</span></div>
+                                            <div className={styles.price}>R$ {(item.preco5).toFixed(0)},<span className={styles.span} >00</span></div>
                                         </div>
                                     </div>
                                 }
@@ -174,4 +174,4 @@ const VasosCim = (categoria: Props) => {
     )
 }
 
-export default VasosCim;
+export default PlantasArea;

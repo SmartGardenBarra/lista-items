@@ -2,20 +2,19 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import VasosCim from '../components/vasosCim';
+import VasosCim from '../../components/vasosCim';
 import { useState } from 'react';
+import PlantasList from '@/utils/listaPlantas';
+import PlantasArea from '@/components/plantas';
 
 const inter = Inter({ subsets: ['latin'] })
 
 const buttons = [
-  { name: 'Vasos de Cimento', value: 'vaso de cimento', color: 'rgb(196, 196, 196)' },
-  { name: 'Vasos de Resina', value: 'vaso de resina', color: 'rgb(196, 196, 196)' },
-  { name: 'Fibra de Côco', value: 'fibra de côco', color: 'rgb(196, 196, 196)' },
-  { name: 'Vasos de Barro', value: 'vaso de barro', color: 'rgb(196, 196, 196)' },
+  { name: 'Plantas', value: 'planta', color: 'rgb(196, 196, 196)' },
 ]
 
 export default function Home() {
-  const [categoria, setCategoria] = useState('vaso de cimento');
+  const [categoria, setCategoria] = useState('planta');
   const [id, setId] = useState(0);
   return (
     <>
@@ -38,7 +37,7 @@ export default function Home() {
           ))}
         </div>
         <h1>{buttons[id].name}</h1>
-        <VasosCim categoria={categoria} />
+        <PlantasArea categoria={categoria} />
       </main>
     </>
   )
