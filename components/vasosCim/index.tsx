@@ -35,8 +35,6 @@ const VasosCim = (categoria: Props) => {
         setFilterList(updateList)
     }
 
-
-
     return (
         <div className={styles.main}>
             <a href='/'>
