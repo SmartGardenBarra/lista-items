@@ -126,7 +126,7 @@ const VasosCimento = [
         nome: 'Vaso Pilão', img: './vasosCimento/vasoPilao.jpg',
         tipo: 'vaso de cimento',
         preco: 0, medidas: '?', tamanho: '?',
-        preco2: 49, medidas2: '', tamanho2: '',
+        preco2: 49, medidas2: '47x42', tamanho2: '',
         preco3: 0, medidas3: '?', tamanho3: '?',
         preco4: 0, medidas4: '4x46x42', tamanho4: '42',
         preco5: 0, medidas5: '4x57x52', tamanho5: '52',
@@ -145,8 +145,8 @@ const VasosCimento = [
     {
         nome: 'Caixa Romana', img: './vasosCimento/cxRomana.jpg',
         tipo: 'vaso de cimento',
-        preco: 0, medidas: '?', tamanho: '?',
-        preco2: 49, medidas2: '49x38', tamanho2: '',
+        preco: 0, medidas: '40x34', tamanho: 'P', 
+        preco2: 49, medidas2: '49x38', tamanho2: 'G',
         preco3: 0, medidas3: '?', tamanho3: '?',
         preco4: 0, medidas4: '4x46x42', tamanho4: '42',
         preco5: 0, medidas5: '4x57x52', tamanho5: '52',
@@ -183,11 +183,21 @@ const VasosCimento = [
     },
 
     {
+        nome: 'Vaso Copo', img: './vasosCimento/vasoCopo.jpg',
+        tipo: 'vaso de cimento',
+        preco: 0, medidas: '?', tamanho: '?',
+        preco2: 0, medidas2: '?', tamanho2: '?',
+        preco3: 66, medidas3: '51x83', tamanho3: 'G',
+        preco4: 0, medidas4: '4x46x42', tamanho4: '42',
+        preco5: 0, medidas5: '4x57x52', tamanho5: '52',
+    },
+
+    {
         nome: 'Caixa Raio de Sol', img: './vasosCimento/cxRaioDeSol.jpg',
         tipo: 'vaso de cimento',
         preco: 25, medidas: '', tamanho: 'PP',
         preco2: 37, medidas2: '', tamanho2: 'M',
-        preco3: 52, medidas3: '', tamanho3: 'G',
+        preco3: 52, medidas3: '57x46', tamanho3: 'G',
         preco4: 0, medidas4: '4x46x42', tamanho4: '42',
         preco5: 0, medidas5: '4x57x52', tamanho5: '52',
     },
